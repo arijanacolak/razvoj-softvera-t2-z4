@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane id="data" stylesheets="/css/stil.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" percentWidth="0.0" prefWidth="38.0" />
+      <ColumnConstraints maxWidth="293.0" minWidth="235.0" percentWidth="0.0" prefWidth="292.0" />
+    <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints percentHeight="0.0" />
+      <RowConstraints maxHeight="56.0" minHeight="10.0" percentHeight="0.0" prefHeight="43.0" />
+      <RowConstraints maxHeight="265.0" minHeight="238.0" prefHeight="257.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ButtonBar id="button1" GridPane.columnIndex="1">
+        <buttons>
+          <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="91.0" text="Add" />
+            <Button mnemonicParsing="false" prefHeight="32.0" text="Remove" />
+        </buttons>
+         <GridPane.margin>
+            <Insets left="2.0" />
+         </GridPane.margin>
+      </ButtonBar>
+      <ButtonBar id="button2" GridPane.columnIndex="5">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </ButtonBar>
+      <ImageView id="slika_chart" fitHeight="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../img/chart.png" />
+         </image>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </ImageView>
+      <VBox GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <children>
+            <Label prefHeight="31.0" prefWidth="242.0" text="Employees" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+    <Button alignment="CENTER" minWidth="33.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="36.0" text="?" GridPane.columnIndex="4" />
+      <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <image>
+            <Image url="@../img/icon.png" />
+         </image>
+      </ImageView>
+      <Label id="data" text="Data" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

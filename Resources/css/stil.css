@@ -1,0 +1,10 @@
+.root {
+    -fx-background-color: springgreen;
+}
+#slika_chart {
+    -fx-background-color: powderblue;
+}
+/*
+#data {
+    -fx-font-weight: bold;
+}*/
