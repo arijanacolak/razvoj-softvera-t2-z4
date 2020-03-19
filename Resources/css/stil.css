@@ -1,5 +1,5 @@
 .root {
-    -fx-background-color: springgreen;
+    -fx-background-color: lightgreen;
 }
 #slika_chart {
     -fx-background-color: powderblue;
@@ -7,13 +7,4 @@
 
 #data {
     -fx-font-weight: bold;
-}
-
-#slika {
-     -fx-background-repeat: stretch;
-        -fx-background-position: center center;
-}
-
-#pane {
-
 }
