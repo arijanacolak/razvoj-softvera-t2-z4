@@ -1,4 +1,4 @@
-package sample;
+package ba.unsa.etf.rs.tutorijal2;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Ispit test");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }

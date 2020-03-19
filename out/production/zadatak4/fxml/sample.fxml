@@ -6,28 +6,28 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane id="data" stylesheets="/css/stil.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane id="pane" alignment="CENTER" stylesheets="/css/stil.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints />
       <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" percentWidth="0.0" prefWidth="38.0" />
-      <ColumnConstraints maxWidth="293.0" minWidth="235.0" percentWidth="0.0" prefWidth="292.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="13.0" percentWidth="0.0" prefWidth="76.0" />
+      <ColumnConstraints percentWidth="0.0" />
     <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints percentHeight="0.0" />
-      <RowConstraints maxHeight="56.0" minHeight="10.0" percentHeight="0.0" prefHeight="43.0" />
-      <RowConstraints maxHeight="265.0" minHeight="238.0" prefHeight="257.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="0.0" />
+      <RowConstraints vgrow="NEVER" />
   </rowConstraints>
    <children>
       <ButtonBar id="button1" GridPane.columnIndex="1">
         <buttons>
-          <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="91.0" text="Add" />
+          <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="91.0" text="Add" />
             <Button mnemonicParsing="false" prefHeight="32.0" text="Remove" />
         </buttons>
          <GridPane.margin>
-            <Insets left="2.0" />
+            <Insets left="2.0" top="10.0" />
          </GridPane.margin>
       </ButtonBar>
       <ButtonBar id="button2" GridPane.columnIndex="5">
@@ -42,24 +42,29 @@
          <GridPane.margin>
             <Insets />
          </GridPane.margin>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
       </ImageView>
-      <VBox GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <Label prefHeight="31.0" prefWidth="242.0" text="Employees" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="85.0" />
+         </padding>
          <GridPane.margin>
             <Insets />
          </GridPane.margin>
-         <children>
-            <Label prefHeight="31.0" prefWidth="242.0" text="Employees" textAlignment="CENTER">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <padding>
-                  <Insets left="70.0" />
-               </padding>
-            </Label>
-         </children>
-      </VBox>
-    <Button alignment="CENTER" minWidth="33.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="36.0" text="?" GridPane.columnIndex="4" />
-      <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    <Button alignment="CENTER" minWidth="33.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="36.0" text="?" GridPane.columnIndex="4">
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin></Button>
+      <ImageView fx:id="slika" fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets />
          </GridPane.margin>
@@ -69,11 +74,77 @@
       </ImageView>
       <Label id="data" text="Data" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <font>
-            <Font size="17.0" />
+            <Font size="19.0" />
          </font>
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin>
       </Label>
+      <GridPane GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+
+             <Label text="28-45 years" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0">
+       </Label>
+             <Label text="&gt;28 years" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1">
+             </Label>
+         </children>
+      </GridPane>
+
+      <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+         <children>
+             <Label id="labela8" text=" ">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Label id="labela1" text="Costs">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Label id="labela5" text=" ">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Label id="labela2" text="Goods">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Label id="labela6" text=" ">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Label id="labela3" text="Employees">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Label id="labela7" text=" ">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Label id="labela4" text="Departments">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+         </children>
+      </VBox>
+       <Label minWidth="100" text="&lt;45 years" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+       </Label>
    </children>
 </GridPane>
